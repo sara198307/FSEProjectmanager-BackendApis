@@ -15,7 +15,6 @@ import com.fse.project.repository.ProjectRepository;
 @Service
 public class ProjectServiceImpl implements ProjectService{
 
-	
 	private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 	ObjectMapper objectMapper = new ObjectMapper();
 

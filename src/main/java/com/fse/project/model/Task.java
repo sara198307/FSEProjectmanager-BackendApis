@@ -38,10 +38,10 @@ public class Task implements Serializable{
 	private String status;
 	
 	@Column(name = "Start_Date")
-	private Date startDate;
+	private String startDate;
 	
 	@Column(name = "End_Date")
-	private Date endDate;
+	private String endDate;
 	
 	
 	public long getTaskId() {
@@ -81,16 +81,16 @@ public class Task implements Serializable{
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Date getStartDate() {
+	public String getStartDate() {
 		return startDate;
 	}
-	public void setStartDate(Date startDate) {
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
-	public Date getEndDate() {
+	public String getEndDate() {
 		return endDate;
 	}
-	public void setEndDate(Date endDate) {
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 	public static long getSerialversionuid() {
