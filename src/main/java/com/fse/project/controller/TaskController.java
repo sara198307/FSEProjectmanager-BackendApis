@@ -58,6 +58,11 @@ public class TaskController {
 		return taskService.getAllTasks();
 	}
 	
+	@GetMapping("/getTasksbyProjectId/{projectId}")
+	public List<Task> getTasksbyProjectId(@PathVariable long projectId){
+		return taskService.getTasksbyProjectId(projectId);
+	}
+	
 	@GetMapping("/deleteTask/{taskId}")
 	public String deleteTask (@PathVariable Long taskId){
 		return taskService.deleteTask(taskId);

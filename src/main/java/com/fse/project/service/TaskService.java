@@ -14,6 +14,8 @@ public interface TaskService {
 	
 	public List<Task> getAllTasks();
 	
+	public List<Task> getTasksbyProjectId(long projectId);
+	
 	public String deleteTask(long taskId);
 
 }

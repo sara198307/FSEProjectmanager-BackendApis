@@ -81,6 +81,13 @@ public class TaskServiceImpl implements TaskService{
 			status = "Error";
 		}
 		return status; 
+	}
+
+	@Override
+	public List<Task> getTasksbyProjectId(long projectId) {
+		
+		List<Task> tasks= (List<Task>)taskRepository.GetTaskByProjectId(projectId);	
+		return tasks;
 	}	
 	
 
