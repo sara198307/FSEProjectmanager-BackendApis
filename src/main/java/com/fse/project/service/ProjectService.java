@@ -16,4 +16,6 @@ public interface ProjectService {
 	public List<Project> getAllProjects();
 	
 	public String deleteProject(long projectId);
+	
+	public void updateuser(long projectId,String projectManager );
 }

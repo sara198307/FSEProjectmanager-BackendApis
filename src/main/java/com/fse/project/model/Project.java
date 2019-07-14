@@ -1,7 +1,6 @@
 package com.fse.project.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -34,6 +33,21 @@ public class Project implements Serializable{
 	
 	@Column(name = "End_Date")
 	private String endDate;
+	
+	
+	@Column(name = "Manager")
+	private String manager;
+	
+	
+	
+
+	public String getManager() {
+		return manager;
+	}
+
+	public void setManager(String manager) {
+		this.manager = manager;
+	}
 
 	public long getProjectId() {
 		return projectId;

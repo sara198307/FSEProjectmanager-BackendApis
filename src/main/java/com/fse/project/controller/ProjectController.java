@@ -37,7 +37,12 @@ public class ProjectController {
 	
 	@PostMapping("/addProject")
 	public Project addProject(@RequestBody Project project){
-		return projectService.createProject(project);
+		
+		Project project1 = new Project();
+		project1 = projectService.createProject(project);
+		System.out.println(project.getManager());
+		//projectService.updateuser(project1.getProjectId(),project1.getManager());
+		return project1; 
 	}
 	
 	@PutMapping("/updateProject/{projectId}")

@@ -27,7 +27,10 @@ public class ProjectServiceImpl implements ProjectService{
 		Project newProject = projectRepository.save(project);
 		return newProject;
 	}
-
+	public void updateuser(long projectId, String projectManager) {
+		projectRepository.updateUserProjectId(projectId,projectManager);
+	}
+	
 	@Override
 	public Project updateProject(Project project, long projectId) {
 		Optional<Project> projectfromDb = projectRepository.findById(projectId);
