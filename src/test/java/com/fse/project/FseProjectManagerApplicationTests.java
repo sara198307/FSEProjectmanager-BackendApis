@@ -139,7 +139,7 @@ public class FseProjectManagerApplicationTests {
 			 user.setFirstName("FirstNameUpdated");
 			 user.setLastName("LastNameUpdated");
 			 user.setEmpId(287534);
-			 user = userServiceImpl.updateUser(user, 3);
+			 user = userServiceImpl.updateUser(user, 12);
 			 System.out.println("User Updated:"+user.getFirstName());
 			 assertEquals("FirstNameUpdated", user.getFirstName());
 			  }
@@ -148,7 +148,7 @@ public class FseProjectManagerApplicationTests {
 		   @Test
 		   public void getUserById()
 		   {
-		      User user = userServiceImpl.getUser(4);
+		      User user = userServiceImpl.getUser(11);
 		      System.out.println("User Exists::"+user.getFirstName());
 		      assertEquals("TestFirstName", user.getFirstName());
 		    }
