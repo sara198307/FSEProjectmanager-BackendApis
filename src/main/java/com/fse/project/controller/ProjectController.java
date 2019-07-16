@@ -21,7 +21,7 @@ import com.fse.project.model.Project;
 import com.fse.project.service.ProjectService;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080"},maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080","http://localhost:8085"},maxAge = 4800, allowCredentials = "false")
 public class ProjectController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ProjectController.class);

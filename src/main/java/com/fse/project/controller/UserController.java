@@ -20,7 +20,7 @@ import com.fse.project.model.User;
 import com.fse.project.service.UserService;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080"},maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080","http://localhost:8085"},maxAge = 4800, allowCredentials = "false")
 public class UserController {
 
 	

@@ -19,7 +19,7 @@ import com.fse.project.model.Task;
 import com.fse.project.service.TaskService;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080"},maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080","http://localhost:8085"},maxAge = 4800, allowCredentials = "false")
 public class TaskController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TaskController.class);
