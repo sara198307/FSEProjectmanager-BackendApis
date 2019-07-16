@@ -150,7 +150,7 @@ public class FseProjectManagerApplicationTests {
 		   {
 		      User user = userServiceImpl.getUser(1);
 		      System.out.println("User Exists::"+user.getFirstName());
-		      assertEquals("TestFirstName", user.getFirstName());
+		      assertEquals("Saravanan", user.getFirstName());
 		    }
 		   
 		   //Adding  the Parent
