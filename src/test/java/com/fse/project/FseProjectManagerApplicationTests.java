@@ -62,7 +62,7 @@ public class FseProjectManagerApplicationTests {
 		 pro.setPriority(14);
 		 pro.setStartDate("2019-07-23");
 		 pro.setEndDate("2020-07-23");
-		 pro = projectServiceImpl.updateProject(pro,18);
+		 pro = projectServiceImpl.updateProject(pro,5);
 		 System.out.println("Project Updated:"+pro.getProjectId());
 		 assertEquals("TestProjectUpdated", pro.getProject());
 		  }
@@ -71,7 +71,7 @@ public class FseProjectManagerApplicationTests {
 		   @Test
 		   public void getProjectById()
 		   {
-		      Project pro = projectServiceImpl.getProject(18);
+		      Project pro = projectServiceImpl.getProject(4);
 		      System.out.println("Project Exists"+pro.getProject());
 		      assertEquals("TestProject", pro.getProject());
 		  
@@ -104,7 +104,7 @@ public class FseProjectManagerApplicationTests {
 			 task.setStatus("Completed");
 			 task.setParentId(18);
 			 task.setPriority(6);
-			 task = taskServiceImpl.updateTask(task,2);
+			 task = taskServiceImpl.updateTask(task,7);
 			 System.out.println("Task Updated:"+task.getTask());
 			 assertEquals("TesttaskUpdated", task.getTask());
 			  }
@@ -114,7 +114,7 @@ public class FseProjectManagerApplicationTests {
 		   @Test
 		   public void getTaskById()
 		   {
-		      Task task = taskServiceImpl.getTask(18);
+		      Task task = taskServiceImpl.getTask(8);
 		      System.out.println("Task Exists"+task.getTask());
 		      assertEquals("Testtask", task.getTask());
 		    }
@@ -148,7 +148,7 @@ public class FseProjectManagerApplicationTests {
 		   @Test
 		   public void getUserById()
 		   {
-		      User user = userServiceImpl.getUser(12);
+		      User user = userServiceImpl.getUser(4);
 		      System.out.println("User Exists"+user.getFirstName());
 		      assertEquals("TestFirstName", user.getFirstName());
 		    }
