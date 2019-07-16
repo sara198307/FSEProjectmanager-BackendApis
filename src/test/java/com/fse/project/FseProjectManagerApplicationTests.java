@@ -149,7 +149,7 @@ public class FseProjectManagerApplicationTests {
 		   public void getUserById()
 		   {
 		      User user = userServiceImpl.getUser(4);
-		      System.out.println("User Exists"+user.getFirstName());
+		      System.out.println("User Exists::"+user.getFirstName());
 		      assertEquals("TestFirstName", user.getFirstName());
 		    }
 		   
